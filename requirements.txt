@@ -1,0 +1,7 @@
+# INSTALL ALL OF THEM BY ENTER SAME TEXT ONE BY ONE IN TERMINAL AND PRESS ENTER 
+pip install flask       
+pip install numpy   
+pip install pandas      
+pip install scikit-lear 
+pip install matplotlib  
+pip install seaborn  
