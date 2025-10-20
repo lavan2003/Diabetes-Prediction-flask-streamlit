@@ -85,3 +85,5 @@ Add database support (MySQL or SQLite) for saving patient history
 Include data visualization dashboards (using Seaborn/Plotly)
 
 Deploy on cloud (Render, Vercel, or AWS)
+
+Developer Contact: S. Lavan Chary Email: lavans110@gmail.com / LinkedIn: www.linkedin.com/in/lavan-srungari-493266297 / GitHub: https://github.com/lavan2003
