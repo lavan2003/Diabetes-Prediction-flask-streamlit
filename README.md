@@ -17,20 +17,6 @@ Developer credit and modern look with clean layout
 Ready for machine learning model integration
 Fast and lightweight — runs locally on any system
 
-Project Structure :
-diabetes_project/
-│
-├── app.py                ← Main Flask application file
-├── requirements.txt       ← Dependencies list
-├── README.txt             ← Project information (this file)
-│
-├── static/
-│   ├── style.css          ← Custom styles (optional)
-│   ├── script.js          ← JavaScript animations/suggestions (optional)
-│   └── bg.jpg             ← HD background image
-│
-└── templates/
-    └── index.html         ← HTML layout (if not using render_template_string)
 
 Requirements :
 
@@ -70,9 +56,9 @@ Age
 
 The app performs a dummy prediction using threshold logic :
 
-If glucose > 125 or BMI > 30 → “Diabetic”
+If glucose > 125 or BMI > 30 - “Diabetic”
 
-Else → “Non-Diabetic”
+Else - “Non-Diabetic”
 
 The result is displayed instantly with a smooth UI animation.
 
