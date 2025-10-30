@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 MODEL_PATH = "model.pkl"
 
-# ---------------- TRAIN MODEL IF NOT FOUND ----------------
+# TRAIN MODEL IF NOT FOUND
 if not os.path.exists(MODEL_PATH):
     print("⚙️ Training a small demo model (first time only)...")
     np.random.seed(42)
@@ -30,10 +30,10 @@ if not os.path.exists(MODEL_PATH):
     joblib.dump(pipe, MODEL_PATH)
     print("✅ Model trained & saved as model.pkl")
 
-# ---------------- LOAD MODEL ----------------
+# LOAD MODEL
 model = joblib.load(MODEL_PATH)
 
-# ---------------- HTML TEMPLATE ----------------
+#  HTML TEMPLATE
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="en">
@@ -151,7 +151,7 @@ function showSuggestion(input){
 </html>
 """
 
-# ---------------- ROUTE ----------------
+# ROUTE
 @app.route("/", methods=["GET", "POST"])
 def home():
     result = confidence = None
@@ -168,3 +168,4 @@ def open_browser():
 if __name__ == "__main__":
     threading.Timer(1, open_browser).start()
     app.run(debug=False)
+
