@@ -14,10 +14,8 @@ else:
     print("❌ File not found! Please check the name or move the CSV into this folder.")
 
 
-# ------------------------------
-# Step 2: Data Preprocessing
-# ------------------------------
 
+# Step 2: Data Preprocessing
 print("\n--- Data Preprocessing Started ---")
 
 # Drop duplicate rows (if any)
@@ -44,9 +42,8 @@ print(data.head())
 print("\n--- Data Preprocessing Completed ---")
 
 
-# ------------------------------
+
 # Step 3: Model Training and Testing
-# ------------------------------
 print("\n--- Model Training Started ---")
 
 # Step 3.1: Separate features (X) and target (y)
@@ -78,3 +75,4 @@ print("F1-Score:", round(f1_score(y_test, y_pred), 3))
 print("ROC-AUC:", round(roc_auc_score(y_test, y_pred), 3))
 
 print("\n--- Model Training & Testing Completed ---")
+
